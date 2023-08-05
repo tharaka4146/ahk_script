@@ -42,19 +42,28 @@ return
 ; ============== apps shortcuts ==============
 
 ; shift + alt + c
-<+<!c:: Run, brave.exe ; run brave browser
+<+<!c::
+    Run, brave.exe ; run brave browser
 return
 
 ; ctrl + alt + c
-<^<!c:: Run, chrome.exe ; run chrome browser
+<^<!c::
+    Run, chrome.exe ; run chrome browser
 return
 
 ; shift + alt + m
-<+<!m:: Run, AppleMusic.exe ; run apple music (not itunes)
+<+<!m::
+    Run, AppleMusic.exe ; run apple music (not itunes)
 return
 
 ; shift + alt + v
-<+<!v:: Run, "C:\Users\dell\AppData\Local\Programs\Microsoft VS Code\Code.exe" ; run vscode :)
+<+<!v::
+    Run,"C:\Users\dell\AppData\Local\Programs\Microsoft VS Code\Code.exe" ; run vscode :)
+return
+
+; shift + alt + w
+<+<!w::
+    Run, "C:\Program Files\WindowsApps\5319275A.WhatsAppDesktop_2.2330.7.0_x64__cv1g1gvanyjgm\WhatsApp.exe" ; run whatsapp
 return
 
 ; ============== folder shortcuts ==============
