@@ -1,7 +1,7 @@
 # ahk_script
 *a simple 'keyboard shortcut script' that is usefull for '60% keyboards'*
 
-% how to run
+# how to run
 1. download and install AutoHotkey from https://www.autohotkey.com/
 2. press win + r
 3. type shell:startup, press enter
