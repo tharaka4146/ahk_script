@@ -32,11 +32,11 @@ return
 return
 
 ; ctrl + win + a
-<^#a::Browser_Back ; navigate back one page on browser
+<^#a::Browser_Back ; navigate back one page on browser and on windows explorer
 return
 
 ; ctrl + win + s
-<^#s::Browser_Forward ; navigate forward one page on browser
+<^#s::Browser_Forward ; navigate forward one page on browser and on windows explorer
 return
 
 ; ============== apps shortcuts ==============
