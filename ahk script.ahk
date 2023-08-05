@@ -5,7 +5,7 @@ DetectHiddenWindows, on
 ; ============== media shortcuts ==============
 
 ; ctrl + win + x
-<^#x::Media_Next; next track
+<^#x::Media_Next ; next track
 return
 
 ; ctrl + win + z
