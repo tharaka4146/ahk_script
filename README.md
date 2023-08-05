@@ -1,4 +1,4 @@
-# ahk_script
+# ahk_script_for_windows
 *a simple 'keyboard shortcut script' that is usefull for '60% keyboards'*
 
 # how to run
@@ -9,3 +9,6 @@
 
 # how to modify
 use AutoHotKey Windows Spy (comes with the above installation) to get the "ahk_class" and "ahk_exe" when modifying the scripts
+
+# p.s
+some shortcuts paths have to be modified according to your pc folders and file locations :)
