@@ -1,4 +1,4 @@
-# ahk_script_for_windows
+# ahk_script_for_60%_keyboards
 *a simple 'keyboard shortcut script' that is usefull for '60% keyboards'*
 
 # how to run
