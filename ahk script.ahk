@@ -5,11 +5,11 @@ DetectHiddenWindows, on
 ; ============== media shortcuts ==============
 
 ; ctrl + win + x
-<^#x::Media_Next ; next track
+<^#s::Media_Next ; next track
 return
 
 ; ctrl + win + z
-<^#z::Media_Prev ; previous track
+<^#a::Media_Prev ; previous track
 return
 
 ; ctrl + win + space
@@ -31,19 +31,19 @@ return
     send #{PrintScreen}
 return
 
-; ctrl + win + a
-<^#a::Browser_Back ; navigate back one page on browser and on windows explorer
-return
+; ; ctrl + win + a
+; <^#a::Browser_Back ; navigate back one page on browser and on windows explorer
+; return
 
-; ctrl + win + s
-<^#s::Browser_Forward ; navigate forward one page on browser and on windows explorer
-return
+; ; ctrl + win + s
+; <^#s::Browser_Forward ; navigate forward one page on browser and on windows explorer
+; return
 
 ; ============== apps shortcuts ==============
 
 ; shift + alt + c
 <+<!c::
-    Run, brave.exe ; run brave browser
+    Run, msedge.exe ; run brave browser
 return
 
 ; ctrl + alt + c
@@ -58,93 +58,91 @@ return
 
 ; shift + alt + v
 <+<!v::
-    Run,"C:\Users\dell\AppData\Local\Programs\Microsoft VS Code\Code.exe" ; run vscode :)
+    Run,"C:\Users\Tharaka\AppData\Local\Programs\Microsoft VS Code\Code.exe" ; run vscode :)
 return
 
 ; shift + alt + w
 <+<!w::
-    Run, "C:\Program Files\WindowsApps\5319275A.WhatsAppDesktop_2.2330.7.0_x64__cv1g1gvanyjgm\WhatsApp.exe" ; run whatsapp
+    Run, "C:\Users\Tharaka\Desktop\WhatsApp" ; run whatsapp
 return
 
 ; ============== folder shortcuts ==============
 
 ; shift + alt + d
 <+<!d:: ; open downloads folder
-    Run, "C:\Users\dell\Downloads"
+    Run, "C:\Users\Tharaka\Downloads"
 return
 
 ; shift + alt + s
 <+<!s:: ; open desktop folder
-    Run, "C:\Users\dell\Desktop"
+    Run, "C:\Users\Tharaka\Desktop"
 return
 
 ; shift + alt + a
 <+<!a:: ; open anime folder
-    Run, "F:\Other\Anime"
+    Run, "E:\Other\Anime"
 return
 
 ; shift + alt + g
 <+<!g:: ; open lyrics folder
-    Run, "E:\Guitar\lyrics"
+    Run, "D:\Guitar\lyrics"
 return
 
 ; shift + alt + p
 <+<!p:: ; open screenshots folder
-    Run, "E:\Pictures\Screenshots"
+    Run, "D:\Pictures\Screenshots"
 return
 
 ; shift + alt + z
 <+<!z:: ; open movies folder 1
-    Run, "E:\Movies"
+    Run, "D:\Movies"
 return
 
 ; shift + alt + x
 <+<!x:: ; open movies folder 2
-    Run, "F:\Other\Movies"
+    Run, "E:\Other\Movies"
 return
 
 ; ============== browser shortcuts ==============
 
 ; shift + alt + e
-<+<!e:: ; open gmail in new window
-    Run, brave.exe "https://mail.google.com/" " --new-window "
+<+<!E:: ; open gmail
+    Run, msedge.exe "https://mail.google.com/"
+return
+
+; shift + alt + ctrl + e
+<+<!<^E:: ; open gmail on new window
+    Run, msedge.exe "https://mail.google.com/" " --new-window"
 return
 
 ; shift + alt + y
-<+<!y:: ; open youtube in new window
-    Run, brave.exe "https://www.youtube.com/" " --new-window "
+<+<!y:: ; open youtube
+    Run, msedge.exe "https://www.youtube.com/"
+return
+
+; shift + alt + ctrl + y
+<+<!<^y:: ; open youtube on new window
+    Run, msedge.exe "https://www.youtube.com/" " --new-window"
 return
 
 ; shift + alt + b
-<+<!b:: ; open facebook in new window
-    Run, brave.exe "https://www.facebook.com/" " --new-window "
+<+<!b:: ; open facebook
+    Run, msedge.exe "https://www.facebook.com/"
 return
 
 ; shift + alt + u
-<+<!u:: ; open slt usage in new window
-    Run, brave.exe "https://myslt.slt.lk/boardBand/summary" " --new-window "
+<+<!u:: ; open slt usage
+    Run, msedge.exe "https://myslt.slt.lk/boardBand/summary"
+return
+
+; shift + alt + ctrl + u
+<+<!<^u:: ; open slt usage
+    Run, msedge.exe "https://myslt.slt.lk/boardBand/summary" " --new-window"
 return
 
 ; shift + alt + t
-<+<!t:: ; open github in new window
-    Run, brave.exe "https://github.com/" " --new-window "
-return
-
-; ============== shutdown shortcuts ==============
-
-; ctrl + alt + q
-<^<!q:: ; shutdown
-    Shutdown, 1
-return
-
-; ctrl + alt + w
-<^<!w:: ; restart
-    Shutdown, 2
-return
-
-; ctrl + alt + e
-<^<!e:: ; sleep
-    DllCall("PowrProf\SetSuspendState", "int", 0, "int", 0, "int", 0)
+<+<!t:: ; open github
+    Run, msedge.exe "https://github.com/"
 return
 
 ; ============== alt f4 shortcut ==============
@@ -152,16 +150,43 @@ return
 ;alt + 4
 <!4::<!f4 ; alt + f4 works with or withtout the fn button
 
-; ============== wifi shortcut ==============
+; ; ============== shutdown shortcuts ==============
 
-; shift + alt + 1
-<+<!1:: ; switch to router 1
-    run, %comspec% /c netsh wlan connect name="SLT_4GLTE" ssid="SLT_4GLTE"
+; ; ctrl + alt + q
+; <^<!q:: ; shutdown
+;     Shutdown, 1
+; return
+
+; ; ctrl + alt + w
+; <^<!w:: ; restart
+;     Shutdown, 2
+; return
+
+; ; ctrl + alt + e
+; <^<!D:: ; sleep
+;     DllCall("PowrProf\SetSuspendState", "int", 0, "int", 0, "int", 0)
+; return
+
+; ; ============== wifi shortcut ==============
+
+; ; shift + alt + 1
+; <+<!1:: ; switch to router 1
+;     run, %comspec% /c netsh wlan connect name="SLT_4GLTE" ssid="SLT_4GLTE"
+; return
+
+; ; shift + alt + 2
+; <+<!2:: ; switch to router 2
+;     run, %comspec% /c netsh wlan connect name="Slt Fibre" ssid="Slt Fibre"
+; return
+
+; ; ============== window ==============
+
+; ctrl + win + x
+<^#x::Send, ^#{Right} ; next track
 return
 
-; shift + alt + 2
-<+<!2:: ; switch to router 2
-    run, %comspec% /c netsh wlan connect name="Slt Fibre" ssid="Slt Fibre"
+; ctrl + win + z
+<^#z::Send, ^#{Left} ; previous track
 return
 
 ;endofscript
